@@ -104,6 +104,26 @@
       height: auto;
       border-radius: 20px; 
   }
+
+  .helloworld{
+   left:25%;
+   margin-bottom:55px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+.draw-liness{
+   min-width: 400px;
+}
+
     
 
 
@@ -1088,6 +1108,8 @@ iframe {
    background: rgba(14, 59, 67, 0.85);
    border-color: rgba(14, 59, 67, 0.5);
 }
+
+
 
 /* Responsive styles */
 @media (min-width: 768px) {

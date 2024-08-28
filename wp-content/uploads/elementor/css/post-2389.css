@@ -5226,8 +5226,8 @@
         background-size: 77% auto;
     }
     .elementor-2389 .elementor-element.elementor-element-22a636a1 {
-        --padding-top: 13em;
-        --padding-bottom: 10em;
+        --padding-top: 0em;
+        
         --padding-left: 0em;
         --padding-right: 0em;
     }
@@ -7076,7 +7076,7 @@
     }
     .elementor-2389 .elementor-element.elementor-element-22a636a1 {
         --padding-top: 8em;
-        --padding-bottom: 11em;
+        
         --padding-left: 0em;
         --padding-right: 0em;
     }
