@@ -244,7 +244,7 @@
    .thumbnail-containerr {
      width: 100%; /* Ensure the thumbnail container is responsive */
      height:100%;
-     margin-left: -7px; /* Remove margin */
+    padding-left: 10px;
      margin-top:22px;
      
    }
@@ -1007,7 +1007,7 @@ iframe {
     color: #2d2c2c;
      margin-bottom: 20px;
       font-weight: bold; 
-      margin-top: 20px;
+      margin-top: 40px;
        font-family: 'Plus Jakarta Sans', sans-serif;
        
 }
@@ -1031,7 +1031,84 @@ iframe {
    text-align: center; /* Optional: center the text */
    margin-top:30px;
    line-height: 1;
+   font-size:20px;
+   font-weight:700;
+
+   background-color: rgba(14, 59, 67, 0.75);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(14, 59, 67, 0.375);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+   
 }
+
+.withclass{
+   display: block;
+      width: 100%;
+      text-align: center; /* Optional: center the text */
+      line-height: 1.6;
+
+}
+
+/* Container for the buttons */
+.inffo-buttons {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Space between buttons and thumbnail */
+    flex-wrap: wrap; /* Ensure buttons stay in a row on smaller screens */
+
+}
+
+/* Button styles */
+.inffo-button {
+   background: rgba(14, 59, 67, 0.75);
+   -webkit-backdrop-filter: blur(2px);
+   backdrop-filter: blur(12px);
+   border: 2px solid #a6ef6733;
+    
+   color: #ffffff;
+   padding: 10px 20px;
+   margin: 5px; /* Space between buttons */
+   flex: 1;
+   max-width: 250px; /* Limit width on larger screens */
+   font-size: 16px;
+   text-align: center;
+   border-radius: 10px;
+   transition: all 0.3s ease;
+}
+
+.inffo-button:hover {
+   background: rgba(14, 59, 67, 0.85);
+   border-color: rgba(14, 59, 67, 0.5);
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+   .inffo-buttons {
+      grid-column-gap: 24px;
+      grid-row-gap: 24px;
+      justify-content: center;
+      display: flex;
+      flex-wrap: nowrap;
+      
+     
+   }
+   .inffo-button {
+      flex-basis: 50%;
+      max-width: 100%; /* Ensure full width on smaller screens */
+      max-height: 100%; /* Ensure full height on smaller screens */
+      border: 2px solid #a6ef6733;
+      
+   }
+}
+
 
 @media (max-width: 768px) {
    .coll-12  {
@@ -1057,6 +1134,12 @@ iframe {
    display: block;
    width: 100%;
    text-align: center; /* Optional: center the text */
+   font-size:14px;
+   line-height: 1.6;
+   font-weight:540;
+   
+        
+        
 }
 
   
@@ -1291,8 +1374,12 @@ iframe {
 }
 
 @media (max-width: 768px) {
+   .slider-area{
+      margin-top: 60px;
+   }
    .slider-area .container {
        padding: 15px 1px; /* Add padding to avoid content touching edges */
+       margin-top:60px;
    }
 
    .slider-area .row {
@@ -1305,6 +1392,7 @@ iframe {
        width: 100%; /* Make columns full width */
        height: 90%; /* Make columns full height */
        margin-bottom:20px;
+       margin-top: 40px;
       
        align-items: center; /* Align items to center */  
        
