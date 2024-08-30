@@ -1264,7 +1264,7 @@ iframe {
   .custom-card-title {
       margin: 0;
       font-size: 20px;
-      color: #fff; /* White color for the title */
+      color:#28a745; /* White color for the title */
       font-weight: bold;
       z-index: 1; /* Ensure the title is above the background */
       position: relative;
@@ -1274,7 +1274,7 @@ iframe {
   .custom-card-text {
       margin: 10px 0 0 0;
       font-size: 19px;
-      color: #28a745; /* Green color for the text */
+      color:#fff ; /* Green color for the text */
       line-height: 1.2;
       text-align: start;
      font-weight: bold;
