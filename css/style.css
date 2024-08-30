@@ -1091,6 +1091,8 @@ iframe {
 
 }
 
+
+
 /* Button styles */
 .inffo-button {
    background: rgba(14, 59, 67, 0.75);
@@ -1136,6 +1138,8 @@ iframe {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
    
 }
+
+
 
 
 
@@ -1251,7 +1255,7 @@ iframe {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+    
       position: relative; /* Ensures proper stacking context */
       overflow: hidden;
       text-align: start;
@@ -1272,7 +1276,7 @@ iframe {
       font-size: 19px;
       color: #28a745; /* Green color for the text */
       line-height: 1.2;
-      text-align: center;
+      text-align: start;
      font-weight: bold;
       z-index: 1; /* Ensure the text is above the background */
       position: relative;
