@@ -1175,7 +1175,7 @@ iframe {
        padding: 15px 1px 15px 10px;
        flex: 1;
        max-width: 250px; /* Limit width on larger screens */
-       font-size: 14px;
+       font-size: 12px;
        text-align: center;
        border-radius: 10px;
        transition: all 0.3s ease;
