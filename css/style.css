@@ -113,6 +113,7 @@
 
 .slider-area{
    margin-top:10px;
+
 }
 
 .slider-area .container{
@@ -890,6 +891,7 @@ iframe {
 
 
 
+
 @media (max-width: 480px) {
 
    .feature-carded {
@@ -1105,16 +1107,22 @@ iframe {
   
    flex: 1;
    max-width: 250px; /* Limit width on larger screens */
-   font-size: 16px;
+   font-size: 14px;
    text-align: center;
    border-radius: 10px;
    transition: all 0.3s ease;
+}
+
+.inffo-button img {
+   left: 40px; /* Set the icon to 10px from the left on smaller screens */
 }
 
 .inffo-button:hover {
    background: rgba(14, 59, 67, 0.85);
    border-color: rgba(14, 59, 67, 0.5);
 }
+
+
 
 .stocksubh {
    display: block;
@@ -1144,32 +1152,49 @@ iframe {
 
 
 /* Responsive styles */
-@media (min-width: 768px) {
-   .inffo-buttons {
-      grid-column-gap: 24px;
-      grid-row-gap: 24px;
-      justify-content: center;
-      display: flex;
-      flex-wrap: nowrap;
-     
-    
-      
-     
-   }
-   .inffo-button {
-      aspect-ratio: auto;
-      flex-basis: 50%;
-      max-width: 100%; /* Ensure full width on smaller screens */
-      max-height: 100%; /* Ensure full height on smaller screens */
-      border: 2px solid #a6ef6733;
-      min-height: 38px;
-      max-height: 70px;
-      
-   }
-}
+
 
 
 @media (max-width: 768px) {
+   /* Container for the buttons */
+   .inffo-buttons {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 20px; /* Space between buttons and thumbnail */
+       flex-wrap: wrap; /* Ensure buttons stay in a row on smaller screens */
+   }
+
+   /* Button styles */
+   .inffo-button {
+       background: rgba(14, 59, 67, 0.75);
+       -webkit-backdrop-filter: blur(2px);
+       backdrop-filter: blur(12px);
+       border: 2px solid #a6ef6733;
+       color: #ffffff;
+       padding: 15px 1px 15px 10px;
+       flex: 1;
+       max-width: 250px; /* Limit width on larger screens */
+       font-size: 14px;
+       text-align: center;
+       border-radius: 10px;
+       transition: all 0.3s ease;
+   }
+
+   /* Icon position for phone view */
+   .inffo-button img {
+       left: 10px; /* Set the icon to 10px from the left on smaller screens */
+   }
+
+   .inffo-button:hover {
+       background: rgba(14, 59, 67, 0.85);
+       border-color: rgba(14, 59, 67, 0.5);
+   }
+
+
+
+
+
    .coll-12  {
        font-size: 7.3vw; /* Adjust size for smaller screens */
        margin-top: 1px; /* Adjust margin */
