@@ -1299,7 +1299,7 @@ body:not(.rtl) .elementor-2389 .elementor-element.elementor-element-6d109ae .ele
     --align-items: center;
     --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow)) * 100%);
     --background-transition: 0.3s;
-    --margin-top: 90px;
+    --margin-top: 1px;
     --margin-bottom: 0px;
     --margin-left: 0px;
     --margin-right: 0px;
