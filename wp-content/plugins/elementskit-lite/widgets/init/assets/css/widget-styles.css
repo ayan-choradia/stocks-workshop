@@ -909,7 +909,7 @@
         -ms-flex: 0 0 33.333333%;
         -webkit-box-flex: 0;
         flex: 0 0 33.333333%;
-        max-width: 33.333333%
+        max-width: 100.333333%
     }
     .ekit-wid-con .col-lg-5 {
         -ms-flex: 0 0 41.666667%;

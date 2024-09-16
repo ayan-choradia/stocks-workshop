@@ -259,6 +259,8 @@ body:not(.rtl) .elementor-2389 .elementor-element.elementor-element-f6e5bf3 .ele
     max-width: initial;
 }
 
+
+
 .elementor-2389 .elementor-element.elementor-element-bff5fbd>.elementor-widget-container {
     margin: 0px 0px 10px 0px;
     padding: 8px 8px 8px 0px;
@@ -676,7 +678,7 @@ body:not(.rtl) .elementor-2389 .elementor-element.elementor-element-6d109ae .ele
     --padding-right: 0em;
 }
 
-.elementor-2389 .elementor-element.elementor-element-39b03f5c::before,
+
 .elementor-2389 .elementor-element.elementor-element-39b03f5c>.elementor-background-video-container::before,
 .elementor-2389 .elementor-element.elementor-element-39b03f5c>.e-con-inner>.elementor-background-video-container::before,
 .elementor-2389 .elementor-element.elementor-element-39b03f5c>.elementor-background-slideshow::before,
