@@ -1,3 +1,5 @@
+/*! elementor - v3.23.0 - 05-08-2024 */
+
 .dialog-widget-content {
     background-color: var(--e-a-bg-default);
     position: absolute;
@@ -434,8 +436,6 @@
     height: auto;
     max-width: 100%;
     border: none;
-    vertical-align: middle
-  
     border-radius: 0;
     box-shadow: none
 }
@@ -704,7 +704,7 @@
     }
 }
 
-@media (max-width:1366px) {
+@media (max-width:-1) {
     .elementor-laptop-align-center {
         text-align: center
     }
@@ -1277,7 +1277,7 @@ h1.entry-title {
     }
 }
 
-@media (min-width:1025px) and (max-width:1366px) {
+@media (min-width:1025px) and (max-width:-1) {
     .elementor-reverse-laptop>.elementor-container>:first-child {
         order: 10
     }
@@ -1310,7 +1310,7 @@ h1.entry-title {
     }
 }
 
-@media (min-width:-1) and (max-width:1366px) {
+@media (min-width:-1) and (max-width:-1) {
     .elementor-reverse-laptop>.elementor-container>:first-child {
         order: 10
     }
@@ -1665,7 +1665,7 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
     }
 }
 
-@media (max-width:1366px) {
+@media (max-width:-1) {
     .elementor-grid-laptop-0 .elementor-grid {
         display: inline-block;
         width: 100%;
@@ -1915,7 +1915,7 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
     }
 }
 
-@media (min-width:1367px) {
+@media (min-width:1025px) {
     #elementor-device-mode:after {
         content: "desktop"
     }
@@ -1927,14 +1927,9 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
     }
 }
 
-@media (max-width:1366px) {
-    #elementor-device-mode:after {
-        content: "laptop"
-    }
-}
-
 @media (max-width:-1) {
     #elementor-device-mode:after {
+        content: "laptop";
         content: "tablet_extra"
     }
 }
@@ -3740,18 +3735,13 @@ body.rtl .e-con {
 }
 
 @media (min-width:-1) and (max-width:-1) {
+    .elementor .elementor-hidden-laptop,
     .elementor .elementor-hidden-tablet_extra {
         display: none
     }
 }
 
-@media (min-width:1025px) and (max-width:1366px) {
-    .elementor .elementor-hidden-laptop {
-        display: none
-    }
-}
-
-@media (min-width:1367px) and (max-width:99999px) {
+@media (min-width:1025px) and (max-width:99999px) {
     .elementor .elementor-hidden-desktop {
         display: none
     }
@@ -4193,7 +4183,7 @@ body.rtl .elementor-widget-n-tabs {
     }
 }
 
-@media (max-width:1366px) {
+@media (max-width:-1) {
     .elementor.elementor .elementor-widget-n-tabs.e-n-tabs-laptop {
         --n-tabs-direction: column;
         --n-tabs-heading-display: contents;
@@ -6251,7 +6241,7 @@ body.rtl .elementor-widget-n-tabs {
     padding-inline-end: 0
 }
 
-@media (min-width:1367px) {
+@media (min-width:1025px) {
     .e-contact-buttons-var-9.has-h-alignment-end .e-contact-buttons__chat-button-icon-container {
         position: absolute;
         inset-inline-end: -5px;
@@ -6267,14 +6257,14 @@ body.rtl .elementor-widget-n-tabs {
     margin-inline-start: var(--e-contact-buttons-overlap-margin)
 }
 
-@media (min-width:1367px) {
+@media (min-width:1025px) {
     .e-contact-buttons-var-9.has-h-alignment-end .e-contact-buttons__chat-button-text {
         -webkit-clip-path: inset(0 0 0 100%);
         clip-path: inset(0 0 0 100%)
     }
 }
 
-@media (min-width:1367px) {
+@media (min-width:1025px) {
     .e-contact-buttons-var-9.has-h-alignment-end .e-contact-buttons__chat-button:focus .e-contact-buttons__chat-button-text,
     .e-contact-buttons-var-9.has-h-alignment-end .e-contact-buttons__chat-button:hover .e-contact-buttons__chat-button-text {
         -webkit-clip-path: inset(0 0 0 0);
@@ -6296,7 +6286,7 @@ body.rtl .elementor-widget-n-tabs {
     order: 2
 }
 
-@media (min-width:1367px) {
+@media (min-width:1025px) {
     .e-contact-buttons-var-9.has-h-alignment-start .e-contact-buttons__chat-button-icon-container {
         position: absolute;
         inset-inline-start: -5px;
@@ -6313,7 +6303,7 @@ body.rtl .elementor-widget-n-tabs {
     order: 1
 }
 
-@media (min-width:1367px) {
+@media (min-width:1025px) {
     .e-contact-buttons-var-9.has-h-alignment-start .e-contact-buttons__chat-button-text {
         -webkit-clip-path: inset(0 100% 0 0);
         clip-path: inset(0 100% 0 0);
@@ -6321,7 +6311,7 @@ body.rtl .elementor-widget-n-tabs {
     }
 }
 
-@media (min-width:1367px) {
+@media (min-width:1025px) {
     .e-contact-buttons-var-9.has-h-alignment-start .e-contact-buttons__chat-button:focus .e-contact-buttons__chat-button-text,
     .e-contact-buttons-var-9.has-h-alignment-start .e-contact-buttons__chat-button:hover .e-contact-buttons__chat-button-text {
         -webkit-clip-path: inset(0 0 0 0);
@@ -6335,7 +6325,7 @@ body.rtl .elementor-widget-n-tabs {
     }
 }
 
-@media (min-width:1367px) {
+@media (min-width:1025px) {
     .e-contact-buttons-var-9.has-h-alignment-center .e-contact-buttons__chat-button-icon-container {
         order: 2;
         position: absolute;
@@ -6352,7 +6342,7 @@ body.rtl .elementor-widget-n-tabs {
     margin-inline-start: var(--e-contact-buttons-overlap-margin)
 }
 
-@media (min-width:1367px) {
+@media (min-width:1025px) {
     .e-contact-buttons-var-9.has-h-alignment-center .e-contact-buttons__chat-button-text {
         inset-inline-end: 50%;
         order: 1;
@@ -6361,7 +6351,7 @@ body.rtl .elementor-widget-n-tabs {
     }
 }
 
-@media (min-width:1367px) {
+@media (min-width:1025px) {
     .e-contact-buttons-var-9.has-h-alignment-center .e-contact-buttons__chat-button:focus .e-contact-buttons__chat-button-text,
     .e-contact-buttons-var-9.has-h-alignment-center .e-contact-buttons__chat-button:hover .e-contact-buttons__chat-button-text {
         -webkit-clip-path: inset(0 0 0 0);
@@ -6757,24 +6747,19 @@ body.rtl .elementor-widget-n-tabs {
 }
 
 @media (min-width:-1) and (max-width:-1) {
+    .e-link-in-bio.is-full-height-laptop,
     .e-link-in-bio.is-full-height-tablet_extra {
         --e-link-in-bio-container-height: var(--e-link-in-bio-full-height, 100vh)
     }
 }
 
-@media (min-width:1025px) and (max-width:1366px) {
-    .e-link-in-bio.is-full-height-laptop {
-        --e-link-in-bio-container-height: var(--e-link-in-bio-full-height, 100vh)
-    }
-}
-
-@media (min-width:1367px) {
+@media (min-width:1025px) {
     .e-link-in-bio.is-full-height-desktop {
         --e-link-in-bio-container-height: var(--e-link-in-bio-full-height, 100vh)
     }
 }
 
-@media (min-width:1367px) and (max-width:99999px) {
+@media (min-width:1025px) and (max-width:99999px) {
     .e-link-in-bio.is-full-height-desktop.is-full-height-widescreen {
         --e-link-in-bio-container-height: var(--e-link-in-bio-full-height, 100vh)
     }

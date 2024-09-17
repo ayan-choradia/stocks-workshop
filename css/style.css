@@ -942,25 +942,35 @@ iframe {
 
    
    }
+   .elementor-icon-box {
+      margin-bottom: 20px;
+  }
 }
 
 .right-img{
    margin-top: 20px;
    padding-top:40px;
    padding-bottom:40px;
+   left:50px;
   
 }
 
 .right-img img {
    max-width: 50%; /* Make the image responsive for mobile */
    
-   margin-left: 33px; /* Remove margin */
+   margin-left: 53px; /* Remove margin */
   
    margin-right: 20px; /* Remove margin */
    
    
-   border-radius:20px;
+   border-radius:50%;
 }
+
+.elementor-icon-box:hover .elementor-icon {
+   transform: scale(1.1);
+   transition: transform 0.3s ease;
+}
+
 
 .draw-lines {
  text-decoration: none; /* Prevent underline on hover */
@@ -1152,6 +1162,110 @@ iframe {
 }
 
 
+.section {
+   position: relative;
+   background-image: linear-gradient(180deg, #010101 0%, #121212 100%)
+}
+
+.full-width {
+   width: 100%;
+}
+
+.height-default {
+   height: auto;
+}
+
+.background-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(180deg, #010101 0%, #121212 100%)
+   z-index: 1;
+}
+
+.container {
+   position: relative;
+   z-index: 2;
+}
+
+.no-gap {
+   padding: 0;
+}
+
+.column {
+   width: 100%;
+}
+
+.widget-wrap {
+   position: relative;
+}
+
+.divider {
+   border-bottom: 1px solid #ccc;
+   margin: 20px 0;
+}
+
+.absolute {
+   position: absolute;
+}
+
+.blur-circle {
+   filter: blur(10px);
+}
+
+.image-widget img {
+   max-width: 100%;
+   height: auto;
+}
+
+.inner-section {
+   padding: 20px;
+}
+
+.boxed {
+   box-sizing: border-box;
+}
+
+.heading-widget h2 {
+   font-size: 24px;
+   font-weight: bold;
+}
+
+.icon-box {
+   display: flex;
+   align-items: center;
+   margin: 10px 0;
+}
+
+.icon-box-icon {
+   margin-right: 10px;
+}
+
+.icon-box-content {
+   display: flex;
+   flex-direction: column;
+}
+
+.icon-box-content h3 {
+   font-size: 18px;
+   margin: 0;
+}
+
+.icon-box-content p {
+   margin: 0;
+}
+
+.text-widget h2 {
+   font-size: 18px;
+   line-height: 1.6;
+}
+
+.highlight {
+   color: #f06;
+   font-weight: bold;
+}
 
 
 
@@ -1229,6 +1343,8 @@ iframe {
         
         
 }
+
+
 
 
 .stocksubh {
@@ -1342,7 +1458,20 @@ iframe {
    .custom-card-text {
        font-size: 15px; /* Adjust text size for small mobile devices */
    }
+
+   .right-img img {
+      max-width: 100%; /* Make the image responsive for mobile */
+      min-width: 80%; /* Make the image responsive for mobile */
+      height: 100%;
+     
+      margin-right: 20px; /* Remove margin */
+      border-radius:20px;
+
+  
+  }
 }
+
+
 
 
   
