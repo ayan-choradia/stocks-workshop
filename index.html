@@ -587,18 +587,49 @@
                                     </div>
                                     <div class="regbutton" style="text-align: center; position: relative; bottom: 30px;">
                                         <a href="https://cosmofeed.com/e/BkklGZLw" class="btnn draw-liness" 
-                                   style="background-color: transparent;background-image: linear-gradient(247deg, var(--e-global-color-4a5499b) 0%, #C5FF7C 100%); color: black; align-items: center;  margin-top: 15px; padding: 15px 5px 15px 5px; border-radius: 14px; font-weight: bold; font-size: 19px;  font-family: 'Vast Shadow', Sans-serif; position: relative;
-                                   text-decoration:dotted; overflow: hidden; display: inline-block; border: 1px solid #000000;  ">
-                                    REGISTER NOW FOR ₹999
-                                    <span class="vasuki" style="position: relative; top: 0; left: 0;  height: 100%; box-sizing: border-box; border-radius: 14px;border: 2px solid transparent; background: transparent; animation: move-border 4s linear infinite; z-index: -1;">
-                                    </span>
-                                    <span style="position: absolute; top: -50%; left: -75%; width: 200%; height: 200%; background: rgba(255, 255, 255, 0.5); 
-                                        transform: rotate(45deg); animation: slide-shine 1s infinite; z-index: 2;">
-                                    </span>
-                                </a>
-                            </div>
+                                           style="background-color: transparent;background-image: linear-gradient(247deg, var(--e-global-color-4a5499b) 0%, #C5FF7C 100%); color: black; align-items: center; margin-top: 15px; padding: 15px 5px 15px 5px; border-radius: 14px; font-weight: bold; font-size: 19px; font-family: 'Vast Shadow', Sans-serif; position: relative; text-decoration: dotted; overflow: hidden; display: inline-block; border: 1px solid #000000;">
+                                            REGISTER NOW FOR ₹999
+                                            <span class="vasuki" style="position: relative; top: 0; left: 0; height: 100%; box-sizing: border-box; border-radius: 14px; border: 2px solid transparent; background: transparent; animation: move-border 4s linear infinite; z-index: -1;">
+                                            </span>
+                                            <span style="position: absolute; top: -50%; left: -75%; width: 200%; height: 200%; background: rgba(255, 255, 255, 0.5); transform: rotate(45deg); animation: slide-shine 1s infinite; z-index: 2;">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    
+                                    <!-- Progress Bar Section -->
+                                    <div class="progress-container" style="text-align: center; margin-top: 20px;">
+                                        <!-- Progress Bar -->
+                                        <div class="progress-bar-container" style="width: 40%; background-color: #e0e0e0; border-radius: 25px; overflow: hidden; position: relative; height: 10px; margin: 0 auto; margin-bottom: 10px;">
+                                            <div class="progress-bar" id="progress-bar" style="height: 100%; width: 0; background-color: #2FFFB9; border-radius: 25px 0 0 25px; transition: width 1s ease-in-out;"></div>
+                                        </div>
+                                        <!-- Sold Out Text -->
+                                        <p class="sold-out-text" id="sold-out-text" style="font-size: 1.8rem; font-weight: bold; color: white; margin: 0;">83.7% Sold out!</p>
+                                    </div>
+                                    
+                                    <script>
+                                        // Initial percentage
+                                        let initialPercentage = 75.2;
+                                        const increment = 2.1; // percentage increment per day
+                                    
+                                        // Get today's date in days since a fixed date (e.g., Jan 1, 2024)
+                                        const startDate = new Date('2024-09-17').getTime();
+                                        const today = new Date().getTime();
+                                        const daysDifference = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+                                    
+                                        // Calculate the updated percentage
+                                        let currentPercentage = initialPercentage + (daysDifference * increment);
+                                    
+                                        // Cap percentage at 100
+                                        if (currentPercentage > 100) {
+                                            currentPercentage = 100;
+                                        }
+                                    
+                                        // Update the progress bar and text
+                                        document.getElementById('progress-bar').style.width = currentPercentage + '%';
+                                        document.getElementById('sold-out-text').textContent = currentPercentage.toFixed(1) + '% sold out!';
+                                    </script>
+                                    
                             
-                        </div>
                 </div>
             </div>
         </section>
@@ -649,7 +680,7 @@
                                                 <div class="box-body">
                                                     <h3 class="elementskit-info-box-title">
                                                         Chasing Hot Tips  </h3>
-                                                    <p>You are constantly following the latest stock tips, hoping for a quick win? </p>
+                                                    <p style="font-weight: bold;">You are constantly following the latest stock tips, hoping for a quick win? </p>
                                                 </div>
 
 
@@ -679,7 +710,7 @@
                                                 <div class="box-body">
                                                     <h3 class="elementskit-info-box-title">
                                                         Falling for Market Hype </h3>
-                                                    <p>Getting caught up in the excitement of a trending stock can be tempting, but hype rarely equals long-term success.</p>
+                                                    <p style="font-weight: bold;">Getting caught up in the excitement of a trending stock can be tempting, but hype rarely equals long-term success.</p>
                                                 </div>
 
 
@@ -709,7 +740,7 @@
                                                 <div class="box-body">
                                                     <h3 class="elementskit-info-box-title">
                                                         Lack of a Clear Strategy </h3>
-                                                    <p>Without a well-defined investment strategy, you see  inconsistent results.</p>
+                                                    <p style="font-weight: bold;">Without a well-defined investment strategy, you see  inconsistent results.</p>
                                                 </div>
 
 
@@ -739,7 +770,7 @@
                                                 <div class="box-body">
                                                     <h3 class="elementskit-info-box-title">
                                                         Emotional Decision-Making </h3>
-                                                    <p>If you’re letting emotions drive your trades, it’s no wonder your portfolio is stuck in the red.</p>
+                                                    <p style="font-weight: bold;">If you’re letting emotions drive your trades, it’s no wonder your portfolio is stuck in the red.</p>
                                                 </div>
 
 
@@ -911,19 +942,19 @@
                 </div>
                 <div class="custom-card">
                     <div class="custom-card-title">Module 3</div>
-                    <p class="custom-card-text">How i pick stocks with momentum(my personal strategy)</p>
+                    <p class="custom-card-text">HOW I PICK STOCK WITH MOMENTUM (MY PERSONAL STRATEGY)</p>
                 </div>
                 <div class="custom-card">
                     <div class="custom-card-title">Module 4</div>
-                    <p class="custom-card-text">Screener for swing trading</p>
+                    <p class="custom-card-text">SCREENER FOR SWING TRADING</p>
                 </div>
                 <div class="custom-card">
                     <div class="custom-card-title">Module 5</div>
-                    <p class="custom-card-text">Long term value creation</p>
+                    <p class="custom-card-text">LONG TERM VALUE CREATION</p>
                 </div>
                 <div class="custom-card">
                     <div class="custom-card-title">Module 6</div>
-                    <p class="custom-card-text">My 2 favourite companies for long term investment</p>
+                    <p class="custom-card-text">MY 2 FAVOURITE COMAPNIES FOR LONG TERM INVESTMENTS</p>
                 </div>
             </div>
             
@@ -958,11 +989,11 @@
                                     <div class="elementskit-infobox text-center text- icon-top-align elementor-animation-   ">
                                         <div class="elementskit-box-header">
                                             <div class="elementskit-info-box-icon ">
-                                                <img loading="lazy" decoding="async" width="365" height="330" src="./img/gallery/Entry-and-Exit-Points.svg" class="attachment- size-" alt="" srcset="./img/gallery/Entry-and-Exit-Points.svg 365w, ./img/gallery/Entry-and-Exit-Points.svg 300w"
+                                                <img loading="lazy" decoding="async" width="365" height="330" src="./img/gallery/Entry and Exit Points.png" class="attachment- size-" alt="" srcset="./img/gallery/Entry and Exit Points.png 365w, ./img/gallery/Entry and Exit Points.png 300w"
                                                     sizes="(max-width: 365px) 100vw, 365px" /> </div>
                                         </div>
                                         <div class="box-body">
-                                            <h4 class="elementskit-info-box-title">
+                                            <h4 class="elementskit-info-box-title" style="color: #2FFFB9;">
                                                 The Perfect Entry and Exit Points </h4>
                                             
                                             <div class="box-footer disable_hover_button">
@@ -972,7 +1003,11 @@
 
 
                                         <div class="ekit-icon-box-badge ekit_position_top_center">
-                                            <span class="ekit-badge">Secret 1</span>
+                                            <div class="elementor-element elementor-element-450b1e29 elementor-widget elementor-widget-heading" data-id="450b1e29" data-element_type="widget" data-widget_type="heading.default">
+                                                <div class="elementor-widget-container">
+                                                    <h6 class="elementor-heading-title elementor-size-default">Secret 1</h6>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -989,11 +1024,11 @@
                                     <div class="elementskit-infobox text-center text- icon-top-align elementor-animation-   ">
                                         <div class="elementskit-box-header">
                                             <div class="elementskit-info-box-icon ">
-                                                <img loading="lazy" decoding="async" width="365" height="330" src="./wp-content/uploads/2024/08/Icon-0" class="attachment- size-" alt="" srcset="./wp-content/uploads/2024/08/Icon-003.png 365w, ./wp-content/uploads/2024/08/Icon-003-300x271.png 300w"
+                                                <img loading="lazy" decoding="async" width="365" height="330" src="./img/gallery/High Growth Stocks.png" class="attachment- size-" alt="" srcset="./img/gallery/High Growth Stocks.png 365w, ./img/gallery/High Growth Stocks.png 300w"
                                                     sizes="(max-width: 365px) 100vw, 365px" /> </div>
                                         </div>
                                         <div class="box-body">
-                                            <h4 class="elementskit-info-box-title">
+                                            <h4 class="elementskit-info-box-title" style="color: #2FFFB9;">
                                                 Spotting High-Growth Stocks Before They Explode</h4>
                                             
                                             <div class="box-footer disable_hover_button">
@@ -1003,7 +1038,11 @@
 
 
                                         <div class="ekit-icon-box-badge ekit_position_top_center">
-                                            <span class="ekit-badge">Secret 2</span>
+                                            <div class="elementor-element elementor-element-450b1e29 elementor-widget elementor-widget-heading" data-id="450b1e29" data-element_type="widget" data-widget_type="heading.default">
+                                                <div class="elementor-widget-container">
+                                                    <h6 class="elementor-heading-title elementor-size-default">Secret 2</h6>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1020,11 +1059,11 @@
                                     <div class="elementskit-infobox text-center text- icon-top-align elementor-animation-   ">
                                         <div class="elementskit-box-header">
                                             <div class="elementskit-info-box-icon ">
-                                                <img loading="lazy" decoding="async" width="365" height="330" src="./wp-content/uploads/2024/08/Icon-005.png" class="attachment- size-" alt="" srcset="./wp-content/uploads/2024/08/Icon-005.png 365w, ./wp-content/uploads/2024/08/Icon-005-300x271.png 300w"
+                                                <img loading="lazy" decoding="async" width="365" height="330" src="./img/gallery/Risk Managment.png" class="attachment- size-" alt="" srcset="./img/gallery/Risk Managment.png 365w, ./img/gallery/Risk Managment.png 300w"
                                                     sizes="(max-width: 365px) 100vw, 365px" /> </div>
                                         </div>
                                         <div class="box-body">
-                                            <h4 class="elementskit-info-box-title">
+                                            <h4 class="elementskit-info-box-title" style="color: #2FFFB9;">
                                                 Risk Management Like a Pro </h4>
                                             
                                             <div class="box-footer disable_hover_button">
@@ -1034,7 +1073,11 @@
 
 
                                         <div class="ekit-icon-box-badge ekit_position_top_center">
-                                            <span class="ekit-badge">Secret 3</span>
+                                            <div class="elementor-element elementor-element-450b1e29 elementor-widget elementor-widget-heading" data-id="450b1e29" data-element_type="widget" data-widget_type="heading.default">
+                                                <div class="elementor-widget-container">
+                                                    <h6 class="elementor-heading-title elementor-size-default">Secret 3</h6>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1052,11 +1095,11 @@
                                     <div class="elementskit-infobox text-center text- icon-top-align elementor-animation-   ">
                                         <div class="elementskit-box-header">
                                             <div class="elementskit-info-box-icon ">
-                                                <img loading="lazy" decoding="async" width="365" height="330" src="./wp-content/uploads/2024/08/Icon-005.png" class="attachment- size-" alt="" srcset="./wp-content/uploads/2024/08/Icon-005.png 365w, ./wp-content/uploads/2024/08/Icon-005-300x271.png 300w"
+                                                <img loading="lazy" decoding="async" width="365" height="330" src="./img/gallery/Expert .png" class="attachment- size-" alt="" srcset="./img/gallery/Expert .png 365w, ./img/gallery/Expert .png 300w"
                                                     sizes="(max-width: 365px) 100vw, 365px" /> </div>
                                         </div>
                                         <div class="box-body">
-                                            <h4 class="elementskit-info-box-title">
+                                            <h4 class="elementskit-info-box-title" style="color: #2FFFB9;">
                                                 Reading the Market Like an Expert </h4>
                                             
                                             <div class="box-footer disable_hover_button">
@@ -1066,7 +1109,11 @@
 
 
                                         <div class="ekit-icon-box-badge ekit_position_top_center">
-                                            <span class="ekit-badge">Secret 4</span>
+                                            <div class="elementor-element elementor-element-450b1e29 elementor-widget elementor-widget-heading" data-id="450b1e29" data-element_type="widget" data-widget_type="heading.default">
+                                                <div class="elementor-widget-container">
+                                                    <h6 class="elementor-heading-title elementor-size-default">Secret 4</h6>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1084,11 +1131,11 @@
                                     <div class="elementskit-infobox text-center text- icon-top-align elementor-animation-   ">
                                         <div class="elementskit-box-header">
                                             <div class="elementskit-info-box-icon ">
-                                                <img loading="lazy" decoding="async" width="365" height="330" src="./wp-content/uploads/2024/08/Icon-005.png" class="attachment- size-" alt="" srcset="./wp-content/uploads/2024/08/Icon-005.png 365w, ./wp-content/uploads/2024/08/Icon-005-300x271.png 300w"
+                                                <img loading="lazy" decoding="async" width="365" height="330" src="./img/gallery/High Performance Portfolio.png" class="attachment- size-" alt="" srcset="./img/gallery/High Performance Portfolio.png 365w, ./img/gallery/High Performance Portfolio.png 300w"
                                                     sizes="(max-width: 365px) 100vw, 365px" /> </div>
                                         </div>
                                         <div class="box-body">
-                                            <h4 class="elementskit-info-box-title">
+                                            <h4 class="elementskit-info-box-title" style="color: #2FFFB9;">
                                                 Building a Balanced, High-Performance Portfolio </h4>
                                             
                                             <div class="box-footer disable_hover_button">
@@ -1098,7 +1145,11 @@
 
 
                                         <div class="ekit-icon-box-badge ekit_position_top_center">
-                                            <span class="ekit-badge">Secret 5</span>
+                                            <div class="elementor-element elementor-element-450b1e29 elementor-widget elementor-widget-heading" data-id="450b1e29" data-element_type="widget" data-widget_type="heading.default">
+                                                <div class="elementor-widget-container">
+                                                    <h6 class="elementor-heading-title elementor-size-default">Secret 5</h6>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1116,11 +1167,11 @@
                                     <div class="elementskit-infobox text-center text- icon-top-align elementor-animation-   ">
                                         <div class="elementskit-box-header">
                                             <div class="elementskit-info-box-icon ">
-                                                <img loading="lazy" decoding="async" width="365" height="330" src="./wp-content/uploads/2024/08/Icon-005.png" class="attachment- size-" alt="" srcset="./wp-content/uploads/2024/08/Icon-005.png 365w, ./wp-content/uploads/2024/08/Icon-005-300x271.png 300w"
+                                                <img loading="lazy" decoding="async" width="365" height="330" src="./img/gallery/Psychological.png" class="attachment- size-" alt="" srcset="./img/gallery/Psychological.png 365w, ./img/gallery/Psychological.png 300w"
                                                     sizes="(max-width: 365px) 100vw, 365px" /> </div>
                                         </div>
                                         <div class="box-body">
-                                            <h4 class="elementskit-info-box-title">
+                                            <h4 class="elementskit-info-box-title" style="color: #2FFFB9;">
                                                 The Psychological Edge of Winning Investors </h4>
                                             
                                             <div class="box-footer disable_hover_button">
@@ -1130,7 +1181,11 @@
 
 
                                         <div class="ekit-icon-box-badge ekit_position_top_center">
-                                            <span class="ekit-badge">Secret 6</span>
+                                            <div class="elementor-element elementor-element-450b1e29 elementor-widget elementor-widget-heading" data-id="450b1e29" data-element_type="widget" data-widget_type="heading.default">
+                                                <div class="elementor-widget-container">
+                                                    <h6 class="elementor-heading-title elementor-size-default">Secret 6</h6>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1264,8 +1319,72 @@
             </a>
         </div>
             </div>
-        </div>
 
+            
+        </div>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-87fc017 list relatiive elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="87fc017" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+        <div class="elementor-background-overlay"></div>
+        <div class="elementor-container elementor-column-gap-no">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3982e2b relatiive" data-id="3982e2b" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    
+                    <div class="elementor-element elementor-element-b0bea70 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="b0bea70" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+                        data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                            <img loading="lazy" decoding="async" width="52" height="42" src="./wp-content/uploads/2024/08/bg-dots-3.svg" class="attachment-large size-large wp-image-107" alt="" /> </div>
+                    </div>
+                    <section class="elementor-section elementor-inner-section elementor-element elementor-element-260d3b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="260d3b3" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-e0a9b6e" data-id="e0a9b6e" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-c5d7620 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="c5d7620" data-element_type="widget" data-widget_type="heading.default">
+                                                                
+                                   
+                                    
+                            </div>
+                        </div>
+                    </section>
+                       
+                            <div class="about-area3 fix" style="padding: 70px 20px;  background-image: radial-gradient(at top center, var(--e-global-color-primary) 0%, var(--e-global-color-secondary) 100%);border-radius: 40px;">
+                                <div class="support-wrapper align-items-center">
+                                    <div class="right-content3">
+                                        <!-- img -->
+                                        <div class="right-img">
+                                            <img src="/img/gallery/coach.jpg" alt=""  style="border-radius: 50%; " >
+                                        </div>
+                                    </div>
+                                    <div class="left-content3">
+                                        <!-- section tittle -->
+                                        <div class="section-tittle section-tittle2 mb-20">
+                                            <div class="front-text">
+                                                <h2 class="" style="font-family: 'Russo One', sans-serif ;color: #2FFFB9;">About the coach </h2>
+                                            </div>
+                                        </div>
+                                        <div class="single-features">
+                                            
+                                            <div class="features-caption">
+                                                <p style="color: white;">I’m Uzair Ahmad, an ex-Data Analyst at Adobe with over 10 years of experience in the stock market. My passion for investing, combined with a data-driven approach, has helped me generate over ₹1 crore in stock market profits. Now, I’m on a mission to help you do the same!
+                                                    .</p>
+                                            </div>
+                                        </div>
+                                        <div class="single-features">
+                                            
+                                            <div class="features-caption">
+                                                <p  style="color: white;">Throughout my career, I’ve developed proven stock-picking strategies that can transform a losing portfolio into a winning one. My workshop will teach you how to spot profitable opportunities, minimize risks, and build long-term wealth.
+                    
+                                                    .</p>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </section>
+                                
+                           
+
+
+        
 
 
 
@@ -2254,73 +2373,7 @@
         </div>
     </div>
 
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-87fc017 list relatiive elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="87fc017" data-element_type="section"
-            data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-            <div class="elementor-background-overlay"></div>
-            <div class="elementor-container elementor-column-gap-no">
-                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3982e2b relatiive" data-id="3982e2b" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-0839b56 elementor-widget__width-initial elementor-absolute blurCricle elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="0839b56" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
-                            data-widget_type="divider.default">
-                            <div class="elementor-widget-container">
-                                <div class="elementor-divider">
-                                    <span class="elementor-divider-separator">
-						</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-b0bea70 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="b0bea70" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
-                            data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="52" height="42" src="./wp-content/uploads/2024/08/bg-dots-3.svg" class="attachment-large size-large wp-image-107" alt="" /> </div>
-                        </div>
-                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-260d3b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="260d3b3" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-e0a9b6e" data-id="e0a9b6e" data-element_type="column">
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-c5d7620 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="c5d7620" data-element_type="widget" data-widget_type="heading.default">
-                                                                    
-                                       
-                                        
-                                </div>
-                            </div>
-                        </section>
-                           
-                                <div class="about-area3 fix" style="padding: 70px 20px;  background-image: radial-gradient(at top center, var(--e-global-color-primary) 0%, var(--e-global-color-secondary) 100%);border-radius: 40px;">
-                                    <div class="support-wrapper align-items-center">
-                                        <div class="right-content3">
-                                            <!-- img -->
-                                            <div class="right-img">
-                                                <img src="/img/gallery/coach.jpg" alt=""  style="border-radius: 50%; " >
-                                            </div>
-                                        </div>
-                                        <div class="left-content3">
-                                            <!-- section tittle -->
-                                            <div class="section-tittle section-tittle2 mb-20">
-                                                <div class="front-text">
-                                                    <h2 class="" style="font-family: 'Russo One', sans-serif ;color: #2FFFB9;">About the coach </h2>
-                                                </div>
-                                            </div>
-                                            <div class="single-features">
-                                                
-                                                <div class="features-caption">
-                                                    <p style="color: white;">I’m Uzair Ahmad, an ex-Data Analyst at Adobe with over 10 years of experience in the stock market. My passion for investing, combined with a data-driven approach, has helped me generate over ₹1 crore in stock market profits. Now, I’m on a mission to help you do the same!
-                                                        .</p>
-                                                </div>
-                                            </div>
-                                            <div class="single-features">
-                                                
-                                                <div class="features-caption">
-                                                    <p  style="color: white;">Throughout my career, I’ve developed proven stock-picking strategies that can transform a losing portfolio into a winning one. My workshop will teach you how to spot profitable opportunities, minimize risks, and build long-term wealth.
-                        
-                                                        .</p>
-                                                </div>
-                                            </div>
-                                           
-                                        </div>
-                                    </div>
-                               
-
+    
    <!-- { <div class="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support">
         <div data-elementor-type="wp-post" data-elementor-id="330" class="elementor elementor-330">
             <div class="elementor-element elementor-element-993dda0 e-con-full e-flex e-con e-parent" data-id="993dda0" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">

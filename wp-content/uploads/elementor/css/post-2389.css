@@ -8825,14 +8825,15 @@ body:not(.rtl) .elementor-2389 .elementor-element.elementor-element-6d109ae .ele
         letter-spacing: var( --e-global-typography-db1e030-letter-spacing);
         word-spacing: var( --e-global-typography-db1e030-word-spacing);
     }
-    .elementor-2389 .elementor-element.elementor-element-2d738ecd .elementskit-infobox .box-body>p {
+    .elementor-2389 .elementor-element.elementor-element-2d738ecd .elementskit-infobox .box-body p {
         font-size: var( --e-global-typography-0d5e945-font-size);
         line-height: var( --e-global-typography-0d5e945-line-height);
         letter-spacing: var( --e-global-typography-0d5e945-letter-spacing);
         word-spacing: var( --e-global-typography-0d5e945-word-spacing);
+        margin: 0px 10px 5px 0px;
     }
     .elementor-2389 .elementor-element.elementor-element-2d738ecd .elementskit-infobox p {
-        margin: 0px 0px 0px 0px;
+        margin: 0px 15px 0px 0px;
     }
     .elementor-2389 .elementor-element.elementor-element-36bd5a91 .elementor-icon {
         font-size: 18px;
@@ -8916,7 +8917,7 @@ body:not(.rtl) .elementor-2389 .elementor-element.elementor-element-6d109ae .ele
         word-spacing: var( --e-global-typography-0d5e945-word-spacing);
     }
     .elementor-2389 .elementor-element.elementor-element-134f3900 .elementskit-infobox p {
-        margin: 0px 0px 0px 0px;
+        margin: 0px 10px 0px 0px;
     }
     .elementor-2389 .elementor-element.elementor-element-59328d49 .elementor-icon {
         font-size: 18px;

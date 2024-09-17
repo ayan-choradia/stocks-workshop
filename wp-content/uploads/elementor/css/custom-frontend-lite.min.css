@@ -450,7 +450,7 @@
 .elementor video {
     max-width: 100%;
     width: 100%;
-    margin: 0;
+    margin: 12px;
     line-height: 1;
     border: none
 }
