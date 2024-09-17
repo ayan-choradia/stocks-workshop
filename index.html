@@ -2325,7 +2325,7 @@
                 </div>
             </div>
         </section>
-    <div class="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support">
+   <!-- { <div class="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support">
         <div data-elementor-type="wp-post" data-elementor-id="330" class="elementor elementor-330">
             <div class="elementor-element elementor-element-993dda0 e-con-full e-flex e-con e-parent" data-id="993dda0" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                 <div class="elementor-element elementor-element-3915917 e-con-full e-flex elementor-invisible e-con e-child" data-id="3915917" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;slideInUp&quot;,&quot;animation_delay&quot;:150}">
@@ -2384,7 +2384,35 @@
            
             
         </div>
+    </div>} -->
+
+    <div class="sticky-footer">
+        <div class="sticky-price">
+            ₹999
+            <span class="price-cut">₹4999</span>
+        </div>
+        <div class="sticky-register">
+            <a href="https://cosmofeed.com/e/BkklGZLw" class="register-btn">Register Now</a>
+            
+            
+            
+        </div>
     </div>
+    <script>
+       window.addEventListener('scroll', function() {
+        const section = document.getElementById('slider-area');
+        const triggerPoint = 1000; // Adjust this value based on when you want the section to appear
+    
+        if (window.scrollY > triggerPoint) {
+            section.style.display = 'block';
+            section.style.visibility = 'visible';
+            section.style.opacity = '1';
+            section.style.transition = 'opacity 1s ease-in-out';
+        }
+    });
+    
+    </script>
+
     <script type='text/javascript'>
         const lazyloadRunObserver = () => {
             const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
