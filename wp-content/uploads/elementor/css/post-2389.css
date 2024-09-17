@@ -1830,6 +1830,7 @@ body:not(.rtl) .elementor-2389 .elementor-element.elementor-element-6d109ae .ele
     --padding-bottom: 7em;
     --padding-left: 0em;
     --padding-right: 0em;
+    
 }
 
 
@@ -1869,11 +1870,13 @@ body:not(.rtl) .elementor-2389 .elementor-element.elementor-element-6d109ae .ele
 .elementor-2389 .elementor-element.elementor-element-6bc1ef17,
 .elementor-2389 .elementor-element.elementor-element-6bc1ef17::before {
     --border-transition: 0.3s;
+    
 }
 
 .elementor-2389 .elementor-element.elementor-element-3a61d4be {
     --display: flex;
     --background-transition: 0.3s;
+    
 }
 
 .elementor-2389 .elementor-element.elementor-element-2642b499>.elementor-widget-container {
@@ -5890,12 +5893,14 @@ body:not(.rtl) .elementor-2389 .elementor-element.elementor-element-6d109ae .ele
     --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow)) * 100%);
     --gap: 0px 0px;
     --background-transition: 0.3s;
+    
 }
 
 .elementor-2389 .elementor-element.elementor-element-450b1e29>.elementor-widget-container {
     padding: 7px 15px 7px 15px;
     background-color: var( --e-global-color-0f01f5c);
     border-radius: 8px 8px 8px 8px;
+    
 }
 
 .elementor-2389 .elementor-element.elementor-element-450b1e29.elementor-element {
@@ -7680,7 +7685,7 @@ body:not(.rtl) .elementor-2389 .elementor-element.elementor-element-6d109ae .ele
         word-spacing: var( --e-global-typography-accent-word-spacing);
     }
     .elementor-2389 .elementor-element.elementor-element-f5fc8aa {
-        --margin-top: 50px;
+        
         --margin-bottom: 0px;
         --margin-left: 0px;
         --margin-right: 0px;
